@@ -29,6 +29,10 @@ app.use(function(req, res, next) {
 // Serve only the static files form the dist directory
 
 
+app.get('/test', function(req, res) {
+    res.send("Testing...")
+})
+
 
 app.get('/getFile', function(req, res) {
     console.log("inside getFile server.js")
